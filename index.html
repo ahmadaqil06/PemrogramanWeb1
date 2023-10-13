@@ -1,28 +1,64 @@
 <!DOCTYPE html>
-<html lang="idn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Utama</title>
-</head>
-<body>
-    <h1>Programming WEB dengan HTML</h1>
-    <p>Teknologi Informatika</p>
-    <hr width=75% size=3 color="blue" align=left>
-    <br>
-    <pre align="left"> Home       |       Profil       |       About       |       Gallery         |      Kontak </pre>
-    <br>
-    <hr width=75% size=3 color="blue" align=left>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 align="center">Free Registration</h2>
+    <form align="center" action="proses.php" method="post">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required /><br /><br />
 
-    <p>Terimakasih anda telah bergabung dan berkunjung pada situs kamu, kamu berharap anda memperoleh <br> 
-        informasi yang anda inginkan dan anda cari</p>
-    
-    <p>Situs ini bersisi informasi sekitar materi yang beruhubung dengan programming web, di antaranya : <br>
-    HTML, CSS, PHP, MySql dan materi atai artikel lain sekitar web.</p>
+      <label for="tanggal">Tanggal:</label>
+      <input type="text" id="tanggal" name="tanggal" required /> <span> / </span>
+      <input type="text" id="bulan" name="bulan" required /><span> / </span>
+      <input type="text" id="tahun" name="tahun" required />
+      <br /><br />
 
-    <hr width=75% size=3 color="grey" align=left>
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" required></textarea><br /><br />
 
-    <p>Admin Web, Ahmad Aqil</p>
+      <label for="kota">Kota:</label>
+      <input type="text" id="kota" name="kota" required /><br /><br />
 
-</body>
+      <label for="pekerjaan">Pekerjaan:</label>
+      <select id="pekerjaan" name="pekerjaan">
+        <option value="pilih">Pilih Pekerjaan</option>
+        <option value="mahasiswa">Mahasiswa</option>
+        <option value="pegawai">Pegawai</option>
+        <option value="wirausaha">Wirausaha</option></select
+      ><br /><br />
+
+      <label>Jenis Kelamin:</label><br />
+      <input
+        type="radio"
+        id="laki-laki"
+        name="jenis_kelamin"
+        value="laki-laki"
+      />
+      <label for="laki-laki">Laki-Laki</label><br />
+      <input
+        type="radio"
+        id="perempuan"
+        name="jenis_kelamin"
+        value="perempuan"
+      />
+      <label for="perempuan">Perempuan</label><br /><br />
+
+      <label>Hobby:</label><br />
+      <input type="checkbox" id="reading" name="hobby[]" value="reading" />
+      <label for="reading">Reading</label><br />
+      <input type="checkbox" id="sport" name="hobby[]" value="sport" />
+      <label for="sport">Sport</label><br />
+      <input type="checkbox" id="singing" name="hobby[]" value="singing" />
+      <label for="singing">Singing</label><br />
+      <input type="checkbox" id="traveling" name="hobby[]" value="traveling" />
+      <label for="traveling">Traveling</label><br /><br />
+
+      <input type="submit" value="Kirim" />
+      <input type="reset" value="Cancel" />
+    </form>
+  </body>
 </html>
